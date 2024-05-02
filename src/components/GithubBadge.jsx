@@ -1,20 +1,7 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 
 const GithubBadge = (props) => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const armAnimationStyle = isHovered
-    ? { animation: "octocat-wave 560ms ease-in-out infinite" }
-    : { animation: "none" };
+  const size = props.size || 80;
 
   return (
     <>
@@ -55,12 +42,10 @@ const GithubBadge = (props) => {
           `}
       </style>
       <svg
-        width="80"
-        height="80"
+        height={size}
+        width={size}
         viewBox="0 0 250 250"
         aria-hidden="true"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
         className="github"
         onClick={() => window.open(props.link, "_blank")}
       >
@@ -69,7 +54,6 @@ const GithubBadge = (props) => {
           className="arm"
           d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
           fill="#FFFFFF"
-          style={armAnimationStyle}
         ></path>
         <path
           className="body"
@@ -83,6 +67,7 @@ const GithubBadge = (props) => {
 
 GithubBadge.propTypes = {
   link: PropTypes.string.isRequired,
+  size: PropTypes.number,
 };
 
 export default GithubBadge;

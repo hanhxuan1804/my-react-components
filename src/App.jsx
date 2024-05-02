@@ -1,17 +1,17 @@
 import { List, Avatar, Row, Col } from "antd";
 import { useState } from "react";
-import { GithubBadge } from "./components";
+import { GithubBadge, Logo } from "./components";
 
 const data = [
   {
     title: "Github Badge",
     description: "React Component - Github Badge",
-    component: <GithubBadge link="https://chat.openai.com/" />,
+    component: <GithubBadge link="https://chat.openai.com/" size={160} />,
   },
   {
-    title: "Github Badge",
-    description: "React Component - Github Badge",
-    component: <GithubBadge link="example.com" />,
+    title: "Logo",
+    description: "React Component - Logo",
+    component: <Logo size={{ width: 160, height: 160 }} />,
   },
   //TODO: Add more components here
 ];
