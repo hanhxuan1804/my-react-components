@@ -1,1 +1,1 @@
-***Folow step in:*** [ProgrammingVTuberLogos/ReplaceGuide/VSCode/style.css at main · Aikoyori/ProgrammingVTuberLogos (github.com)](https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ReplaceGuide/VSCode/style.css)
+***Folow step in:*** [ProgrammingVTuberLogos Aikoyori/ProgrammingVTuberLogos (github.com)](https://github.com/Aikoyori/ProgrammingVTuberLogos/tree/main/ReplaceGuide/VSCode)
